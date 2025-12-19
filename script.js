@@ -5,6 +5,8 @@ let contact = document.querySelector("#contact");
 let cn= document.querySelector("#cn");
 let form= document.querySelector("form");
 let stat= document.querySelector("#status");
+let register= document.querySelector(".card .cards .register");
+let crosscard= document.querySelector("#card i")
 
 
 newsBtn.addEventListener("click", () => {
@@ -49,3 +51,20 @@ cn.addEventListener("click",function(e){
     });
   });
 
+
+  let con = gsap.to("#card form",{
+   y:1400,
+   duration:1
+
+
+})
+con.pause()
+
+register.addEventListener("click",function(){
+     con.play()
+     console.log("hello")
+})
+
+crosscard.addEventListener("click",function(){
+   con.reverse()
+})
