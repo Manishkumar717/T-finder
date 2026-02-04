@@ -541,8 +541,10 @@ padding: 10px;
 
 .matches>h1{
   position: absolute;
-  margin-bottom: 600px;
-  left: 750px;
+  top: 52rem;
+  left: 40%;
+  transform: translateX(-50%);
+ 
   color: black;
   font-size: 50px;
   font-weight: 900;
