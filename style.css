@@ -48,8 +48,8 @@ html,body{
 .navbar a{
     text-decoration: none;
     color: white;
-    font-size: 25px;  
-    padding-top: 12px; 
+    font-size: 20px;  
+ padding-top: 20px;
     
 }
 .navbar input{
@@ -541,10 +541,8 @@ padding: 10px;
 
 .matches>h1{
   position: absolute;
-  top: 52rem;
-  left: 40%;
-  transform: translateX(-50%);
- 
+  margin-bottom: 600px;
+  left: 550px;
   color: black;
   font-size: 50px;
   font-weight: 900;
@@ -685,10 +683,15 @@ padding: 10px;
   
   
 }
+#contact form ::placeholder{
+  color: rgba(255, 255, 255, 0.576);
+
+}
 #contact form{
  max-width: 600px;
   height: 350px;
-  background-color: rgb(228, 226, 226);
+  background: linear-gradient(#ca2724,#133771);
+
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,7 +707,7 @@ padding: 10px;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
-  margin-left: 700px;
+  margin-left: 500px;
   
 }
 
@@ -716,7 +719,7 @@ padding: 10px;
   border: none;
   text-align: left;
   outline: none;
-  
+  color: white;
   
 }
 #contact input:focus {
@@ -725,7 +728,7 @@ padding: 10px;
 }
 #contact h1{
   position: absolute;
-  left: 800px;
+  left: 600px;
   bottom: 415px;
   font-size: 40px;
   font-weight: 800;
@@ -733,7 +736,7 @@ padding: 10px;
  form button{
   margin-left: 50px;
   padding: 10px 210px;
-  background-color: rgba(255, 255, 0, 0.628);
+  background-color: rgba(43, 255, 0, 0.582);
   border-radius: 20px;
   border: none;
   font-size: 22px;
@@ -771,14 +774,16 @@ padding: 10px;
 #social-media i{
   font-size: 30px;
   padding: 10px;
+color: white;
   
   
  
 
 }
 #social-media .socials{
-padding-left: 920px;
+padding-left: 670px;
 padding-top: 20px;
+
 }
 
 #status{
@@ -789,14 +794,14 @@ padding-top: 20px;
 }
 
 .post{
-  height: 500px;
-  width: 770px;
+  height: 450px;
+  width: 670px;
   background: -webkit-gradient(linear,left top, left bottom,from(black),color-stop(#D96846),to(black));
   background: -o-linear-gradient(black,#D96846,black);
   background: linear-gradient(black,#D96846,black);
   position: absolute;
-  top: 820px;
-  left: 705px;
+  top: 950px;
+  left: 450px;
   z-index: 9999;
   display: none;
   border-radius: 20px;
