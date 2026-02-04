@@ -1,3 +1,7 @@
+
+
+
+let form1= document.querySelector(".post form");
 let newsBtn = document.querySelector("#newsbtn");
 let newsPoster = document.querySelector("#newsposter");
 
@@ -5,8 +9,11 @@ let contact = document.querySelector("#contact");
 let cn= document.querySelector("#cn");
 let form= document.querySelector("form");
 let stat= document.querySelector("#status");
-let register= document.querySelector(".card .cards .register");
+let register= document.querySelectorAll(".cards .register");
 let crosscard= document.querySelector("#card i")
+let post = document.querySelector(".post")
+let cross = document.querySelector(".post i")
+
 
 
 newsBtn.addEventListener("click", () => {
@@ -26,7 +33,19 @@ cn.addEventListener("click",function(e){
         behavior:"smooth"
     })
 })
+register.forEach(function(btn){
+    btn.addEventListener("click",function(){
+        post.style.display="block"
 
+    }) 
+}) 
+cross.addEventListener("click",function(){
+        post.style.display="none"
+        
+}) 
+form1.addEventListener("submit",  function(e) {
+    e.preventDefault();
+})
 
   form.addEventListener("submit",  function(e) {
     e.preventDefault(); 
@@ -41,13 +60,13 @@ cn.addEventListener("click",function(e){
       }
     }).then(response => {
       if (response.ok) {
-        stat.innerHTML = "✅ Form Submitted Successfully!";
+        stat.innerHTML = " Form Submitted Successfully!";
         form.reset();
       } else {
-        stat.innerHTML = "❌ Something went wrong!";
+        stat.innerHTML = " Something went wrong!";
       }
     }).catch(error => {
-      stat.innerHTML = "❌ Error submitting form!";
+      stat.innerHTML = " Error submitting form!";
     });
   });
 
@@ -60,11 +79,21 @@ cn.addEventListener("click",function(e){
 })
 con.pause()
 
-register.addEventListener("click",function(){
-     con.play()
-     console.log("hello")
-})
 
-crosscard.addEventListener("click",function(){
-   con.reverse()
-})
+
+
+
+let loader = document.getElementById("loader");
+let website = document.getElementById("website");
+
+window.addEventListener("load", function () {
+
+   setTimeout(() => {
+    loader.classList.add("hide");
+    
+  setTimeout(() => {
+    loader.style.display = "none";
+    website.style.display = "block";
+     }, 600);
+  }, 2000); // 3 seconds
+});

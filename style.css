@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 *{
     margin: 0;
@@ -16,6 +10,7 @@ html,body{
     width: 100%;
     color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 
 }
 
@@ -37,15 +32,16 @@ html,body{
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    left: 600px;
+    right: 90px;
     padding: 5px 20px;
     gap: 70px;
+    
     
 }
 .navbar a{
     text-decoration: none;
     color: white;
-    font-size: 20px;  
+    font-size: 25px;  
     padding-top: 12px; 
     
 }
@@ -65,7 +61,7 @@ html,body{
   
 }
 .navbar h2{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 900;
     padding: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -705,7 +701,7 @@ padding: 10px;
 }
 #contact h1{
   position: absolute;
-  left: 880px;
+  left: 800px;
   bottom: 415px;
   font-size: 40px;
   font-weight: 800;
@@ -768,3 +764,104 @@ padding-top: 20px;
   font-size: 20px;
 }
 
+.post{
+  height: 500px;
+  width: 770px;
+  background: linear-gradient(black,#D96846,black);
+  position: absolute;
+  top: 820px;
+  left: 705px;
+  z-index: 9999;
+  display: none;
+  border-radius: 20px;
+
+}
+.post form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+  padding-top: 60px;
+  
+  
+}
+.post h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+.post form input{
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #171717;
+  color: white;
+    
+}
+.post form button{
+  position: absolute;
+  bottom: 30px;
+  width: 82%;
+}
+
+.post i{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 35px;
+  
+}
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.6s ease;
+}
+
+#loader.hide {
+  opacity: 0;
+  transform: scale(1.5);
+  filter: blur(10px);
+}
+
+
+.spinner {
+  width: 70px;
+  height: 70px;
+  border: 6px solid #444;
+  border-top: 6px solid #D96846;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+#loader h2 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+#website{
+  display: none;
+}
