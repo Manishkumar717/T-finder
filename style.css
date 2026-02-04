@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 *{
     margin: 0;
@@ -71,8 +78,8 @@ html,body{
 .about{
     
     width: 100%;
-   background: -webkit-gradient(linear,left top, right top,from(#D96846),color-stop(rgba(72, 66, 66, 0.276)),to(#D96846));
    background: -o-linear-gradient(left,#D96846,rgba(72, 66, 66, 0.276),#D96846);
+   background: -webkit-gradient(linear,left top, right top,from(#D96846),color-stop(rgba(72, 66, 66, 0.276)),to(#D96846));
    background: linear-gradient(to right,#D96846,rgba(72, 66, 66, 0.276),#D96846);
     padding: 30px 70px;
    padding-top: 180px;
@@ -172,6 +179,11 @@ select #find{
   border-radius: 10px;
  
   
+  background: -o-linear-gradient(black) padding-box,
+   conic-gradient(from var(--rotate), black,#D96846) border-box
+  ;
+ 
+  
   background: -webkit-gradient(linear, left top, left bottom, from(black)) padding-box,
    conic-gradient(from var(--rotate), black,#D96846) border-box
   ;
@@ -256,6 +268,11 @@ select #find{
   border-radius: 10px;
  
   
+  background: -o-linear-gradient(black) padding-box,
+   conic-gradient(from var(--rotate), black,#D96846) border-box
+  ;
+ 
+  
   background: -webkit-gradient(linear, left top, left bottom, from(black)) padding-box,
    conic-gradient(from var(--rotate), black,#D96846) border-box
   ;
@@ -337,6 +354,11 @@ select #find{
   border-radius: 10px;
  
   
+  background: -o-linear-gradient(black) padding-box,
+   conic-gradient(from var(--rotate), black,#D96846) border-box
+  ;
+ 
+  
   background: -webkit-gradient(linear, left top, left bottom, from(black)) padding-box,
    conic-gradient(from var(--rotate), black,#D96846) border-box
   ;
@@ -403,8 +425,8 @@ select #find{
 .matches{
   height: 45rem;
   width: 100%;
-  background: -webkit-gradient(linear,left top, left bottom,from(white),to(#D96846));
   background: -o-linear-gradient(white,#D96846);
+  background: -webkit-gradient(linear,left top, left bottom,from(white),to(#D96846));
   background: linear-gradient(white,#D96846);
   color: #D96846;
   display: -webkit-box;
@@ -487,8 +509,8 @@ padding: 10px;
 .cards button{
   padding: 10px 25px;
   border-radius: 20px;
-  background: -webkit-gradient(linear,left top, left bottom,from(#D96846),to(#ffffff));
   background: -o-linear-gradient(#D96846,#ffffff);
+  background: -webkit-gradient(linear,left top, left bottom,from(#D96846),to(#ffffff));
   background: linear-gradient(#D96846,#ffffff);
   border: none;
   font-size: 20px;
@@ -569,8 +591,8 @@ padding: 10px;
     left: 350px;
     z-index: 9999;
     border-radius: 10px;
-    background: -webkit-gradient(linear,left top, left bottom,from(black),color-stop(gray),to(black));
     background: -o-linear-gradient(black,gray,black);
+    background: -webkit-gradient(linear,left top, left bottom,from(black),color-stop(gray),to(black));
     background: linear-gradient(black,gray,black);
     
     
@@ -632,8 +654,8 @@ padding: 10px;
  #part3{
   width: 100%;
   height: 750px;
-  background: -webkit-gradient(linear,left top, left bottom,from(white),to(#D96846));
   background: -o-linear-gradient(white,#D96846);
+  background: -webkit-gradient(linear,left top, left bottom,from(white),to(#D96846));
   background: linear-gradient(white,#D96846);
   
 }
@@ -648,8 +670,8 @@ padding: 10px;
 }
 
 #contact{
-  background: -webkit-gradient(linear,left top, left bottom,from(white),to(#D96846));
   background: -o-linear-gradient(white,#D96846);
+  background: -webkit-gradient(linear,left top, left bottom,from(white),to(#D96846));
   background: linear-gradient(white,#D96846);
   width: 100%;
   height: auto;
@@ -729,8 +751,8 @@ padding: 10px;
 #social-media{
   height: 200px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.874)));
   background: -o-linear-gradient(rgba(0, 0, 0, 0.874));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.874)));
   background: linear-gradient(rgba(0, 0, 0, 0.874));
   color: white;
   position: relative;
@@ -767,6 +789,8 @@ padding-top: 20px;
 .post{
   height: 500px;
   width: 770px;
+  background: -webkit-gradient(linear,left top, left bottom,from(black),color-stop(#D96846),to(black));
+  background: -o-linear-gradient(black,#D96846,black);
   background: linear-gradient(black,#D96846,black);
   position: absolute;
   top: 820px;
@@ -777,8 +801,13 @@ padding-top: 20px;
 
 }
 .post form{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
   gap: 30px;
   padding-top: 60px;
@@ -824,21 +853,35 @@ padding-top: 20px;
   position: fixed;
   inset: 0;
   background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 9999;
 
   opacity: 1;
   visibility: visible;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
 #loader.hide {
   opacity: 0;
-  transform: scale(1.5);
-  filter: blur(10px);
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 
@@ -848,7 +891,8 @@ padding-top: 20px;
   border: 6px solid #444;
   border-top: 6px solid #D96846;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
   margin-bottom: 15px;
 }
 
@@ -858,9 +902,14 @@ padding-top: 20px;
   letter-spacing: 2px;
 }
 
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 #website{
   display: none;
